@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Activity Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popupHeader">
+    <div id="themeWrapper">
+      <span>Theme:</span>
+      <label><input type="radio" name="theme" value="Light" checked> Light</label>
+      <label><input type="radio" name="theme" value="Dark"> Dark</label>
+    </div>
+    <span id="totalTime">Total: 00h-00m-00s</span>
+  </div>
+  <div class="filter-tabs">
+    <span class="tab active" data-period="today">Today</span>
+    <span class="tab" data-period="yesterday">Yesterday</span>
+    <span class="tab" data-period="this-week">This Week</span>
+    <span class="tab" data-period="this-month">This Month</span>
+    <span class="tab" data-period="all-time">All Time</span>
+  </div>
+  <div id="timeListContainer">
+    <div id="timeList"></div>
+  </div>
+  <footer id="supportFooter">
+    <div class="footer-links">
+      <a href="https://buymeacoffee.com/webright" target="_blank" id="supportBtn" rel="noopener noreferrer">
+        <span>Support My Work</span>
+      </a>
+    </div>
+  </footer>
+  <footer id="infoFooter">
+    <div class="footer-links">
+      <a href="https://anwarulislamshawn29.github.io/web-activity-tracker/privacy.html" target="_blank" rel="noopener noreferrer" class="footer-link">Privacy Policy</a>
+      <span class="separator">|</span>
+      <a href="faq.html" target="_blank" rel="noopener noreferrer" class="footer-link">FAQ</a>
+      <span class="separator">|</span>
+      <button id="exportBtn" class="footer-link">Export Data</button>
+    </div>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>

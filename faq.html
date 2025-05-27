@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Activity Tracker - FAQ</title>
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body class="light-theme">
+  <div class="faq-container">
+    <h1>Web Activity Tracker FAQ</h1>
+
+    <div class="faq-item">
+      <button class="faq-question">What does Web Activity Tracker do?</button>
+      <div class="faq-answer">
+        <p>Web Activity Tracker monitors the time you spend on websites, helping you understand your browsing habits. It tracks time per domain, provides daily/weekly/monthly summaries, and lets you export your data as a CSV file.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I use the extension?</button>
+      <div class="faq-answer">
+        <p>Click the extension icon to open the popup. You'll see a list of domains you've visited, along with the time spent. Use the tabs (Today, Yesterday, This Week, This Month, All Time) to filter your data. You can also export your data by clicking "Export Data" at the bottom.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Does this extension work on all websites?</button>
+      <div class="faq-answer">
+        <p>The extension tracks time on websites using http or https protocols. It does not track time on Chrome internal pages (e.g., chrome://settings) or other protocols like file://.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How is my data stored?</button>
+      <div class="faq-answer">
+        <p>All data is stored locally on your device using Chrome's storage API. No data is sent to external servers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I delete my tracked data?</button>
+      <div class="faq-answer">
+        <p>Yes, you can clear your tracked data by going to Chrome's extension settings. Navigate to chrome://extensions/, find Web Activity Tracker, and click "Remove" to delete all stored data. Alternatively, you can clear Chrome's local storage manually via Developer Tools.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is my data shared with anyone?</button>
+      <div class="faq-answer">
+        <p>No, your data is not shared with anyone. It remains on your device. For more details, see our <a href="https://anwarulislamshawn29.github.io/web-activity-tracker/privacy.html" target="_blank" class="faq-link">Privacy Policy</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I switch between light and dark themes?</button>
+      <div class="faq-answer">
+        <p>In the extension popup, use the theme toggle at the top. Select "Light" or "Dark" to switch themes. Your preference is saved automatically.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What does the "Export Data" button do?</button>
+      <div class="faq-answer">
+        <p>The "Export Data" button downloads your tracked time data as a CSV file. It includes domains, time spent, and percentages for the selected time period (e.g., Today, All Time).</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How accurate is the time tracking?</button>
+      <div class="faq-answer">
+        <p>The extension tracks time spent on active tabs. It may not account for idle periods when a tab is open but not in focus. Time is updated every second while a tab is active.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I support the developer?</button>
+      <div class="faq-answer">
+        <p>You can support the developer by clicking the "Support My Work" link in the extension popup, which takes you to a Buy Me a Coffee page where you can make a donation.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I close tabs from this extension?</button>
+      <div class="faq-answer">
+        <p>Yes, you can close tabs directly from the extension. Each card in the popup has a close button (X icon) on the right. Click it to close all open tabs for that domain, and the display will update automatically.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is this extension free?</button>
+      <div class="faq-answer">
+        <p>Yes, it's totally free.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isOpen = !answer.classList.contains('hidden');
+        document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.add('hidden'));
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

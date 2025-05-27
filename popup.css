@@ -1,0 +1,323 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 10px; /* Increased from 5px for more breathing room */
+  width: 400px; /* Increased from 300px for less compactness */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.light-theme {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.dark-theme {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+#popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Increased from 5px */
+}
+
+#themeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Increased from 3px */
+}
+
+#totalTime {
+  font-size: 15px; /* Increased from 14px */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#timeListContainer {
+  overflow-y: auto;
+  margin-bottom: 10px; /* Increased from 5px */
+  flex: 1 0 auto;
+}
+
+.card {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px; /* Slightly increased for softer look */
+  margin-bottom: 5px; /* Increased from 3px */
+  padding: 5px; /* Increased from 3px */
+  cursor: pointer;
+}
+
+.light-theme .card {
+  background-color: #ffffff;
+}
+
+.dark-theme .card {
+  background-color: #3a3a3a;
+  border-color: #444;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.dark-theme .card:hover {
+  background-color: #404040;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Increased from 3px */
+  width: 100%;
+}
+
+.card-icon {
+  position: relative;
+  width: 12px; /* Increased from 10px */
+  height: 12px; /* Increased from 10px */
+  flex-shrink: 0;
+}
+
+.card-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px; /* Increased from 6px */
+  height: 8px; /* Increased from 6px */
+  border-radius: 50%;
+}
+
+.card-icon:nth-child(7n+1)::before { background-color: #ff4444; }
+.card-icon:nth-child(7n+2)::before { background-color: #ff8800; }
+.card-icon:nth-child(7n+3)::before { background-color: #ffcc00; }
+.card-icon:nth-child(7n+4)::before { background-color: #00cc00; }
+.card-icon:nth-child(7n+5)::before { background-color: #0066cc; }
+.card-icon:nth-child(7n+6)::before { background-color: #800080; }
+.card-icon:nth-child(7n+0)::before { background-color: #8b4513; }
+
+.domain-text {
+  font-size: 15px; /* Increased from 14px */
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.percentage-text {
+  font-size: 13px; /* Increased from 12px */
+  flex-shrink: 0;
+  margin-left: 5px; /* Increased from 3px */
+}
+
+.time-value {
+  font-size: 15px; /* Increased from 14px */
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 5px; /* Increased from 3px */
+}
+
+.close-tab-btn {
+  flex-shrink: 0;
+  margin-left: 5px; /* Increased from 3px */
+  cursor: pointer;
+  width: 14px; /* Increased from 12px for better clickability */
+  height: 14px; /* Increased from 12px */
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-tab-btn::before {
+  content: '';
+  display: inline-block;
+  width: 14px; /* Increased from 12px */
+  height: 14px; /* Increased from 12px */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+  background-size: cover;
+}
+
+.close-tab-btn:hover::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23ff3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+}
+
+.dark-theme .close-tab-btn::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23ff5555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+}
+
+.dark-theme .close-tab-btn:hover::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23ff7777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+}
+
+.card-details {
+  margin-top: 5px; /* Increased from 3px */
+  font-size: 13px; /* Increased from 12px */
+  padding-left: 20px; /* Increased from 15px */
+}
+
+.hidden {
+  display: none;
+}
+
+.detail-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.dark-theme .detail-link {
+  color: #3399ff;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px; /* Increased from 5px */
+}
+
+.tab {
+  padding: 5px 8px; /* Increased from 3px 6px */
+  cursor: pointer;
+  border-radius: 5px; /* Slightly increased for softer look */
+  font-size: 13px; /* Increased from 12px */
+}
+
+.light-theme .tab {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.dark-theme .tab {
+  background-color: #444444;
+  color: #ccc;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.light-theme .tab.active {
+  background-color: #6a87b3;
+  color: #fff;
+}
+
+.dark-theme .tab.active {
+  background-color: #87a9cc;
+  color: #1a1a1a;
+}
+
+.tab:hover {
+  background-color: #d0d0d0;
+}
+
+.dark-theme .tab:hover {
+  background-color: #555555;
+}
+
+#exportBtn, #supportBtn {
+  width: auto;
+  padding: 5px 10px; /* Increased from 4px 8px */
+  margin: 0 5px; /* Increased from 0 3px */
+  border: none;
+  border-radius: 12px; /* Increased from 10px for softer look */
+  cursor: pointer;
+  font-size: 13px; /* Increased from 12px */
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  background-color: #6a87b3;
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+#exportBtn:hover, #supportBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: #7a9dc3;
+}
+
+.dark-theme #exportBtn, .dark-theme #supportBtn {
+  background-color: #5a769d;
+}
+
+.dark-theme #exportBtn:hover, .dark-theme #supportBtn:hover {
+  background-color: #6a87b3;
+}
+
+footer {
+  width: 100%;
+  padding: 8px; /* Increased from 5px */
+  background-color: #6a87b3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#supportFooter {
+  margin-bottom: 5px; /* Increased from 3px */
+}
+
+#infoFooter {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Increased from 5px */
+}
+
+.separator {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px; /* Increased from 12px */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #e0e0e0;
+}
+
+#supportBtn span::after {
+  content: '';
+  display: inline-block;
+  width: 14px; /* Increased from 12px */
+  height: 14px; /* Increased from 12px */
+  margin-left: 3px; /* Increased from 2px */
+  vertical-align: middle;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="%23ff0000" stroke="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+  background-size: cover;
+}
+
+.no-data {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  font-size: 13px; /* Increased from 12px */
+}
+
+.dark-theme .no-data {
+  color: #999;
+}
