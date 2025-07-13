@@ -10,12 +10,12 @@ Web Activity Tracker provides deep insights into your online activity, helping y
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/web-activity-tracker/nadfeddpfjnlancednoohgkokgemjeim" title="Add to Chrome">
-    <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWi8xvr_91GId3.png" alt="Add to Chrome button" width="200">
+    <img src="https://lh3.googleusercontent.com/7w3LHRTIr9BBWL7X1o_fD-ufx6TcAB_kceHfX915Su0hNBE1E3Uy7QqrVsEnNtHL2Ezj_WFMjALc3hDAuXsM56gxkw=s120" alt="Add to Chrome button" width="200">
   </a>
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/L5hSjD0/tracker-hero-image.png" alt="Dashboard of Web Activity Tracker showing charts and graphs of website usage" width="700">
+  <img src="https://lh3.googleusercontent.com/EdWuq2UNLQa1Xm4vkfWGI8HB6kjL9DnQouvIYWYuHKxK7qPyqEU80YEGdlR8ESFMPUri9LJ8hulcW0-ydL_Wx9A6i8g=s1600-w1600-h1000" alt="Dashboard of Web Activity Tracker showing charts and graphs of website usage" width="700">
 </p>
 
 ## ✨ Key Features
@@ -49,9 +49,9 @@ In a world where data is a commodity, Web Activity Tracker takes a stand for use
 
 | Dashboard View (Dark Mode) | List View (Light Mode) |
 | :---: | :---: |
-| ![Dashboard view of the Web Activity Tracker extension](https://i.ibb.co/L5hSjD0/tracker-hero-image.png) | ![List view of the Web Activity Tracker extension showing time spent on different websites](https://i.ibb.co/L5hSjD0/tracker-hero-image.png) |
+| ![Dashboard view of the Web Activity Tracker extension](https://lh3.googleusercontent.com/FCxUoKlVVob0f6MSPKQEqk-gJUG5_Fjs_VdZDH69B21VzBGKSlnZIYxBnNbtHqqlByoOlmCm-p5CsFbkAcBKSreUsw=s1600-w1600-h1000) | ![List view of the Web Activity Tracker extension showing time spent on different websites](https://i.ibb.co/L5hSjD0/tracker-hero-image.png) |
 | **Detailed Stats View** |
-| ![Detailed card view showing a pie chart and advanced statistics for a single website](https://i.ibb.co/L5hSjD0/tracker-hero-image.png) |
+| ![Detailed card view showing a pie chart and advanced statistics for a single website](https://lh3.googleusercontent.com/EdWuq2UNLQa1Xm4vkfWGI8HB6kjL9DnQouvIYWYuHKxK7qPyqEU80YEGdlR8ESFMPUri9LJ8hulcW0-ydL_Wx9A6i8g=s1600-w1600-h1000) |
 
 *(**Note:** Replace the placeholder image URLs above with links to your actual screenshots.)*
 
