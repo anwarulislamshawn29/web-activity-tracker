@@ -1,21 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free time tracker Chrome extension to monitor web activity.">
-  <meta name="keywords" content="time tracker, web activity monitor, productivity extension, free Chrome extension">
-  <title>Web Activity Tracker</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #333; }
-    p { color: #666; }
-    a { text-decoration: none; color: #1a73e8; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Web Activity Tracker - A Private Screen Time Tracker for Chrome</title>
+    
+    <meta name="description" content="Track your website usage and screen time with Web Activity Tracker. A powerful, private, and free Chrome extension to boost productivity and understand your digital habits.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Basic Styling - No external CSS needed */
+        :root {
+            --primary-blue: #0077ff;
+            --dark-bg: #111827;
+            --dark-card: #1f2937;
+            --light-bg: #f9fafb;
+            --light-card: #ffffff;
+            --text-dark: #f3f4f6;
+            --text-light: #1f2937;
+            --text-secondary-dark: #9ca3af;
+            --text-secondary-light: #6b7285;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: var(--light-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 800; font-size: 24px; }
+        .cta-button {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .cta-button:hover { background-color: #005fcc; }
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 20px;
+            color: var(--text-secondary-light);
+            max-width: 650px;
+            margin: 0 auto 32px auto;
+        }
+        .hero img {
+            max-width: 100%;
+            width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+        /* Sections */
+        section { padding: 80px 0; }
+        h2 { font-size: 36px; text-align: center; margin-bottom: 48px; }
+        .features-grid, .how-it-works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .feature-card, .step-card {
+            background: var(--light-card);
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .feature-card h3 { margin-top: 0; }
+        /* Privacy Section */
+        .privacy { background: #eef5ff; }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #e5e7eb;
+            color: var(--text-secondary-light);
+        }
+    </style>
 </head>
 <body>
-  <h1>Web Activity Tracker</h1>
-  <p>Track your web activity with this free time tracker extension.</p>
-  <a href="https://chrome.google.com/webstore/detail/extension-id" target="_blank">Install Now</a>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Web Activity Tracker</div>
+                <a href="https://chromewebstore.google.com/detail/web-activity-tracker/nadfeddpfjnlancednoohgkokgemjeim" class="cta-button">Add to Chrome</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Master Your Time Online</h1>
+            <p>The simple, private, and powerful way to track your web activity, understand your habits, and boost your productivity.</p>
+            <a href="https://chromewebstore.google.com/detail/web-activity-tracker/nadfeddpfjnlancednoohgkokgemjeim" class="cta-button">Add to Chrome - It's Free</a>
+            <img src="https://i.ibb.co/L5hSjD0/tracker-hero-image.png" alt="Dashboard view of the Web Activity Tracker extension showing charts and graphs.">
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Everything You Need to Stay Focused</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Insightful Dashboard</h3>
+                    <p>Instantly visualize your Browse habits with at-a-glance charts showing your weekly trends and domain distribution.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Detailed Tracking</h3>
+                    <p>See exactly how much time you spend on each site, with live updates and expandable cards for deep-dive statistics.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>100% Private</h3>
+                    <p>Your privacy is paramount. All your activity data is stored locally on your device and is never shared or uploaded.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="privacy">
+        <div class="container" style="text-align:center;">
+            <h2>Private by Design. Your Data Stays With You.</h2>
+            <p style="max-width: 650px; margin: 0 auto;">Unlike other trackers, Web Activity Tracker does not collect or sell your personal information. All tracking data is stored securely on your own computer. We believe you should have full control over your own data.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>Get Started in Seconds</h2>
+            <div class="how-it-works-grid">
+                <div class="step-card"><h3>1. Install</h3><p>Add the extension to your Chrome browser from the official Web Store with a single click.</p></div>
+                <div class="step-card"><h3>2. Browse</h3><p>Continue to use the web as you normally would. The tracker works silently in the background.</p></div>
+                <div class="step-card"><h3>3. Get Insights</h3><p>Click the extension icon anytime to view your dashboard and see a full breakdown of your online activity.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Web Activity Tracker. All rights reserved.</p>
+            </div>
+    </footer>
+
 </body>
 </html>
