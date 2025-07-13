@@ -47,7 +47,7 @@ In a world where data is a commodity, Web Activity Tracker takes a stand for use
 
 ## 📸 Screenshots
 
-| Dashboard View (Dark Mode) | List View (Light Mode) |
+| Dashboard View | List View |
 | :---: | :---: |
 | ![Dashboard view of the Web Activity Tracker extension](https://lh3.googleusercontent.com/FCxUoKlVVob0f6MSPKQEqk-gJUG5_Fjs_VdZDH69B21VzBGKSlnZIYxBnNbtHqqlByoOlmCm-p5CsFbkAcBKSreUsw=s1600-w1600-h1000) | ![List view of the Web Activity Tracker extension showing time spent on different websites](https://lh3.googleusercontent.com/zNjdmsYiCCiqXpsM2ScRTWeT6v_OCiaSWJYyeo12SzOx7F43cPolsEbhajW5IhEkCQjZ8JNjvP_pT3oJ9GqzS8HJ=s1600-w1600-h1000) |
 | **Detailed Stats View** |
